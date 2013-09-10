@@ -1,2 +1,2 @@
-ActiveRecordKit
+AppKit
 ===============
