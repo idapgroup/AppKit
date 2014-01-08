@@ -49,4 +49,13 @@ static char __minViewHeighthKey;
     return ((NSNumber *)objc_getAssociatedObject(self, &__minViewHeighthKey)).floatValue;
 }
 
+- (void)setBackgroundColor:(NSColor *)backgroundColor {
+    self.wantsLayer = YES;
+    self.layer.backgroundColor = backgroundColor.CGColor;
+}
+
+- (NSColor *)backgroundColor {
+    return [NSColor colorWithCGColor:self.layer.backgroundColor];
+}
+
 @end

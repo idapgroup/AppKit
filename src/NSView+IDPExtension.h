@@ -15,4 +15,9 @@
 @property (nonatomic, assign) CGFloat minViewWidth;
 @property (nonatomic, assign) CGFloat minViewHeight;
 
+/** Sets the background color of the receiver
+ if the view is not backed by a layer, creates the layer.
+ */
+@property (nonatomic, retain) NSColor *backgroundColor;
+
 @end
