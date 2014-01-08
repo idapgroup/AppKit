@@ -10,6 +10,10 @@
 
 @interface NSWindowController (IDPExtension)
 
+/**
+ This method call initWithWindowNibName: based on window controller class name.
+ @return Return new autorelease window controller.
+ */
 + (id)controllerWithDefaultNib;
 
 @end
