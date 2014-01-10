@@ -58,4 +58,15 @@ static char __minViewHeighthKey;
     return [NSColor colorWithCGColor:self.layer.backgroundColor];
 }
 
+- (CGPoint)center {
+    CGRect frame = self.frame;
+    return CGPointMake(frame.origin.x + CGRectGetWidth(frame) / 2, frame.origin.y + CGRectGetHeight(frame) / 2);
+}
+
+- (void)setCenter:(CGPoint)center {
+    CGRect frame = self.frame;
+    frame.origin = CGPointMake(center.x - CGRectGetWidth(frame), center.y - CGRectGetHeight(frame));
+    [self setFrame:frame];
+}
+
 @end

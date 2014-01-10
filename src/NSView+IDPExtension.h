@@ -20,4 +20,10 @@
  */
 @property (nonatomic, retain) NSColor *backgroundColor;
 
+/**
+ The center of the frame. 
+ The center is specified within the coordinate system of its superview and is measured in points.
+ */
+@property (nonatomic, assign) CGPoint center;
+
 @end
